@@ -140,7 +140,7 @@
                 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6           &kp N7             &kp N8        &kp N9           &kp N0
                 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp K_VOLUME_DOWN  &kp UP_ARROW  &kp K_VOLUME_UP  &kp N0
 &kp LEFT_SHIFT  &kp RA(F18)   &kp RA(F19)   &trans        &trans        &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp LEFT           &kp DOWN      &kp RIGHT        &kp BSLH  &kp BACKSPACE
-                                            &trans        &gif          &mo ADJ                 &trans                 &kp C_PP           &kp TAB
+                                            &kp LEFT_GUI  &gif          &mo ADJ                 &trans                 &kp C_PP           &kp TAB
             >;
         };
 
