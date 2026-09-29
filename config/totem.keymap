@@ -111,10 +111,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp ESC    &kp W      &kp E     &kp R      &kp T       &kp KP_MULTIPLY  &kp N7        &kp N8        &kp N9        &kp BACKSPACE
-                  &kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp LBKT    &kp KP_DIVIDE    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS
-&kp LEFT_CONTROL  &kp DEL    &kp PG_UP  &kp C     &kp V      &kp LPAR    &kp RPAR         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0         &kp MINUS
-                                        &trans    &mo 4      &trans      &kp ENTER        &kp KP_N0     &kp TAB
+                  &kp ESC       &kp W         &kp E         &kp R         &kp MINUS        &kp PLUS         &kp N7        &kp N8        &kp N9        &kp BACKSPACE
+                  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5           &kp NUMBER_6     &kp N7        &kp N8        &kp N9        &kp N0
+&kp LEFT_CONTROL  &kp DEL       &kp PG_UP     &kp C         &kp V         &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0         &kp MINUS
+                                              &trans        &mo 4         &trans           &kp ENTER        &kp KP_N0     &kp TAB
             >;
         };
 
@@ -137,10 +137,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6           &kp N7             &kp N8        &kp N9           &kp DELETE
-                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp K_VOLUME_DOWN  &kp UP_ARROW  &kp K_VOLUME_UP  &kp N0
-&kp LEFT_SHIFT  &kp RA(F18)   &kp RA(F19)   &trans        &trans        &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp LEFT           &kp DOWN      &kp RIGHT        &kp BSLH    &kp DELETE
-                                            &kp LEFT_GUI  &mo 3         &mo ADJ                 &trans                 &kp C_PP           &kp TAB
+                &kp F1       &kp F2        &kp F3        &kp F4        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7             &kp N8        &kp N9           &kp DELETE
+                &kp F5       &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp K_VOLUME_DOWN  &kp UP_ARROW  &kp K_VOLUME_UP  &kp PAGE_UP
+&kp LEFT_SHIFT  &kp RA(F18)  &kp RA(F19)   &trans        &trans        &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp LEFT           &kp DOWN      &kp RIGHT        &kp PAGE_DOWN  &kp DELETE
+                                           &kp LEFT_GUI  &mo 3         &mo ADJ                 &trans                 &kp C_PP           &kp TAB
             >;
         };
 
