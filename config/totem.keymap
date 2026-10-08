@@ -137,7 +137,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp F9  &kp F10  &kp F11       &kp F12  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7             &kp N8        &kp N9           &kp DELETE
+                  &kp F9  &kp F10  &kp F11       &kp F12  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N7             &kp N8        &kp N9           &kp BACKSPACE
                   &kp F5  &kp F6   &kp F7        &kp F8   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp K_VOLUME_DOWN  &kp UP_ARROW  &kp K_VOLUME_UP  &kp PAGE_UP
 &kp LEFT_CONTROL  &kp F1  &kp F2   &kp F3        &kp F4   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp LEFT           &kp DOWN      &kp RIGHT        &kp PAGE_DOWN  &kp DELETE
                                    &kp LEFT_ALT  &mo 3    &mo ADJ                 &trans                 &kp C_PP           &kp TAB
