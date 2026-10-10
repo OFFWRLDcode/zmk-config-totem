@@ -164,7 +164,7 @@
             &kp TAB           &kp Q  &kp W         &kp E   &trans       &kp KP_MULTIPLY  &kp N7        &kp N8        &kp N9        &kp PLUS
             &kp LEFT_SHIFT    &kp A  &kp S         &kp D   &trans       &kp KP_DIVIDE    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
 &kp ESCAPE  &kp LEFT_CONTROL  &kp Z  &kp X         &kp C   &kp V        &trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &kp ENTER
-                                     &kp LEFT_ALT  &tog 0  &kp SPACE    &trans           &trans        &trans
+                                     &kp LEFT_ALT  &tog 3  &kp SPACE    &trans           &trans        &trans
             >;
         };
 
