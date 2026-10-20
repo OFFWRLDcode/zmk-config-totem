@@ -45,19 +45,11 @@
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
+        Delete: Delete {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
+            bindings = <&none>;
+            label = "DELETE";
         };
     };
 
@@ -66,7 +58,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        base_layer {
+        Base_Layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "BASE";
@@ -83,16 +75,16 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q  &kp W  &kp E         &kp R  &kp T                     &kp Y      &kp U      &kp I      &kp O    &kp P
-                &kp A  &kp S  &kp D         &kp F  &kp G                     &kp H      &kp J      &kp K      &kp L    &kp SEMICOLON
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B                     &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH       &kp SQT
-                              &kp LEFT_GUI  &mo 2  &mt LEFT_CONTROL ENTER    &kp SPACE  &lt 1 TAB  &mo 2
+                &kp Q  &kp W  &kp E         &kp R  &kp T                     &kp Y      &kp U  &kp I      &kp O    &kp P
+                &kp A  &kp S  &kp D         &kp F  &kp G                     &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B                     &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp SQT
+                              &kp LEFT_GUI  &mo 2  &mt LEFT_CONTROL ENTER    &kp SPACE  &mo 1  &mo 2
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        nav_layer {
+        Number_Layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "NAVI";
@@ -109,16 +101,16 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp ESC           &kp W         &kp E             &kp R         &kp MINUS        &kp EQUAL        &kp N7        &kp N8        &kp N9        &kp BACKSPACE
-                &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp N5           &kp NUMBER_6     &kp N7        &kp N8        &kp N9        &kp N0
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp C             &kp V         &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0         &kp MINUS
-                                                &kp LEFT_CONTROL  &tog 3        &kp ENTER        &kp ENTER        &kp KP_N0     &kp TAB
+                &kp ESC       &kp TAB       &trans        &trans        &trans              &trans        &trans     &trans  &kp MINUS  &kp EQUAL
+                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5              &kp NUMBER_6  &kp N7     &kp N8  &kp N9     &kp N0
+&kp LEFT_SHIFT  &trans        &trans        &trans        &trans        &trans              &trans        &trans     &trans  &trans     &kp NON_US_BACKSLASH  &kp DEL
+                                            &kp LEFT_GUI  &tog 3        &kp LEFT_CONTROL    &kp ENTER     &kp KP_N0  &trans
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        sim_layer {
+        Function_Layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "SYM";
@@ -135,16 +127,16 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp F9  &kp F10  &kp F11           &kp F12  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRINTSCREEN    &kp N8        &kp N9           &kp BACKSPACE
-                &kp F5  &kp F6   &kp F7            &kp F8   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp K_VOLUME_DOWN  &kp UP_ARROW  &kp K_VOLUME_UP  &kp PAGE_UP
-&kp LEFT_SHIFT  &kp F1  &kp F2   &kp F3            &kp F4   &kp LEFT_ALT            &kp EQUAL              &kp LEFT           &kp DOWN      &kp RIGHT        &kp PAGE_DOWN  &kp DELETE
-                                 &kp LEFT_CONTROL  &tog 3   &trans                  &kp RGUI               &kp C_PP           &kp TAB
+                &kp F9  &kp F10  &kp F11           &kp F12  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PAGE_DOWN      &kp PRINTSCREEN  &kp PAGE_UP      &kp BACKSPACE
+                &kp F5  &kp F6   &kp F7            &kp F8   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp K_VOLUME_DOWN  &kp UP_ARROW     &kp K_VOLUME_UP  &trans
+&kp LEFT_SHIFT  &kp F1  &kp F2   &kp F3            &kp F4   &Delete                 &kp EQUAL              &kp LEFT           &kp DOWN         &kp RIGHT        &trans         &kp DELETE
+                                 &kp LEFT_CONTROL  &trans   &trans                  &kp RGUI               &kp C_PP           &kp TAB
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        adjust_layer {
+        Gaming_Layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "ADJ";
@@ -161,8 +153,8 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp TAB           &kp Q  &kp W         &kp E   &trans       &kp KP_MULTIPLY  &kp N7        &kp N8        &kp N9        &kp PLUS
-            &kp LEFT_SHIFT    &kp A  &kp S         &kp D   &trans       &kp KP_DIVIDE    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+            &kp TAB           &kp Q  &kp W         &kp E   &kp T        &kp KP_MULTIPLY  &kp N7        &kp N8        &kp N9        &kp PLUS
+            &kp LEFT_SHIFT    &kp A  &kp S         &kp D   &kp F        &kp KP_DIVIDE    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
 &kp ESCAPE  &kp LEFT_CONTROL  &kp Z  &kp X         &kp C   &kp V        &trans           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &kp ENTER
                                      &kp LEFT_ALT  &tog 3  &kp SPACE    &trans           &trans        &trans
             >;
